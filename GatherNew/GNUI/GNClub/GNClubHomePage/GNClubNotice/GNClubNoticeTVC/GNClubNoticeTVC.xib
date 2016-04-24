@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="nTZ-zX-JZC" customClass="GNClubNoticeTVC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nTZ-zX-JZC" id="MhZ-dW-0xM">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_clock" translatesAutoresizingMaskIntoConstraints="NO" id="WHy-gl-HBw">
+                        <rect key="frame" x="15" y="15" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="9co-Cm-upa"/>
+                            <constraint firstAttribute="height" constant="9" id="Xdt-TN-dus"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-4V-Wrz">
+                        <rect key="frame" x="29" y="12" width="31" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="sPN-et-pVW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-EU-fob">
+                        <rect key="frame" x="15" y="34" width="31" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xdB-EU-fob" firstAttribute="top" secondItem="WHy-gl-HBw" secondAttribute="bottom" constant="10" id="BKT-2E-VWh"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xdB-EU-fob" secondAttribute="trailing" constant="15" id="LDw-68-orB"/>
+                    <constraint firstItem="WHy-gl-HBw" firstAttribute="top" secondItem="MhZ-dW-0xM" secondAttribute="top" constant="15" id="OKk-QA-FMT"/>
+                    <constraint firstAttribute="bottom" secondItem="xdB-EU-fob" secondAttribute="bottom" constant="15" id="QZ3-G6-6Mz"/>
+                    <constraint firstItem="WHy-gl-HBw" firstAttribute="centerY" secondItem="yY5-4V-Wrz" secondAttribute="centerY" id="YRm-ag-YRH"/>
+                    <constraint firstItem="xdB-EU-fob" firstAttribute="leading" secondItem="MhZ-dW-0xM" secondAttribute="leading" constant="15" id="ZAN-u6-iWc"/>
+                    <constraint firstItem="yY5-4V-Wrz" firstAttribute="leading" secondItem="WHy-gl-HBw" secondAttribute="trailing" constant="5" id="fyn-4v-4gz"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yY5-4V-Wrz" secondAttribute="trailing" constant="15" id="y33-0r-Qw8"/>
+                    <constraint firstItem="WHy-gl-HBw" firstAttribute="leading" secondItem="MhZ-dW-0xM" secondAttribute="leading" constant="15" id="yxR-jp-5gD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="xdB-EU-fob" id="qPu-SU-rqA"/>
+                <outlet property="dateLabel" destination="yY5-4V-Wrz" id="aoK-M3-ZZo"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="288"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_clock" width="9" height="9"/>
+    </resources>
+</document>

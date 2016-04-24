@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="GNMeClubCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-nQ-Q37">
+                        <rect key="frame" x="8" y="11" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="NH5-ak-aIA"/>
+                            <constraint firstAttribute="width" constant="80" id="hVi-Y1-8ph"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rise-Running" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO8-ha-4J2">
+                        <rect key="frame" x="104" y="22" width="98" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新活动:111" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt0-lB-vgs">
+                        <rect key="frame" x="118" y="54" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NSA-Dn-6Gb"/>
+                            <constraint firstAttribute="width" constant="93" id="jWS-9T-SkB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_star" translatesAutoresizingMaskIntoConstraints="NO" id="6Nt-ci-fka">
+                        <rect key="frame" x="104" y="57" width="11" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="11" id="ANg-gh-lgU"/>
+                            <constraint firstAttribute="height" constant="11" id="voe-in-PQO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meClub_MeCreateClub" translatesAutoresizingMaskIntoConstraints="NO" id="5hx-y7-Y3h">
+                        <rect key="frame" x="213" y="57" width="60" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="cYK-3d-sUO"/>
+                            <constraint firstAttribute="width" constant="60" id="ep5-wi-5zS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AO8-ha-4J2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="62B-rl-ssu"/>
+                    <constraint firstItem="Xt0-lB-vgs" firstAttribute="leading" secondItem="6Nt-ci-fka" secondAttribute="trailing" constant="3" id="6YL-cp-WCB"/>
+                    <constraint firstItem="uvX-nQ-Q37" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="AhD-b6-kHj"/>
+                    <constraint firstItem="5hx-y7-Y3h" firstAttribute="top" secondItem="AO8-ha-4J2" secondAttribute="bottom" constant="15" id="adP-gf-3iI"/>
+                    <constraint firstItem="5hx-y7-Y3h" firstAttribute="leading" secondItem="Xt0-lB-vgs" secondAttribute="trailing" constant="2" id="bSl-ow-yQN"/>
+                    <constraint firstItem="6Nt-ci-fka" firstAttribute="top" secondItem="AO8-ha-4J2" secondAttribute="bottom" constant="15" id="hEA-3e-c34"/>
+                    <constraint firstItem="Xt0-lB-vgs" firstAttribute="top" secondItem="AO8-ha-4J2" secondAttribute="bottom" constant="12" id="hjh-sA-wem"/>
+                    <constraint firstAttribute="centerY" secondItem="uvX-nQ-Q37" secondAttribute="centerY" id="hmT-S4-ZlT"/>
+                    <constraint firstItem="6Nt-ci-fka" firstAttribute="leading" secondItem="uvX-nQ-Q37" secondAttribute="trailing" constant="16" id="kYL-7N-bZR"/>
+                    <constraint firstItem="AO8-ha-4J2" firstAttribute="leading" secondItem="uvX-nQ-Q37" secondAttribute="trailing" constant="16" id="xcx-d0-0ev"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageHeader" destination="uvX-nQ-Q37" id="Esn-cE-gMF"/>
+                <outlet property="imageIsMyClub" destination="5hx-y7-Y3h" id="Luu-gB-zMz"/>
+                <outlet property="lbActivityCount" destination="Xt0-lB-vgs" id="oH0-JS-Pun"/>
+                <outlet property="lbTitle" destination="AO8-ha-4J2" id="wxs-Gn-wqC"/>
+            </connections>
+            <point key="canvasLocation" x="490" y="392.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_star" width="11" height="11"/>
+        <image name="meClub_MeCreateClub" width="60" height="15"/>
+    </resources>
+</document>

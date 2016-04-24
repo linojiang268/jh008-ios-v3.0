@@ -1,0 +1,75 @@
+//
+//  GatherNew-Prefix.pch
+//  GatherNew
+//
+//  Created by apple on 15/5/28.
+//  Copyright (c) 2015年 ZERO TO ALL. All rights reserved.
+//
+
+#ifndef GatherNew_GatherNew_Prefix_pch
+#define GatherNew_GatherNew_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <CocoaLumberjack.h>
+#import <ReactiveCocoa.h>
+#import "GNUIAppearance.h"
+#import "GNModel.h"
+#import "GNApp.h"
+
+#pragma mark -
+
+#ifdef DEBUG
+    static const DDLogLevel ddLogLevel = DDLogLevelAll;
+#else
+    static const DDLogLevel ddLogLevel = DDLogLevelOff;
+#endif
+
+#pragma mark -
+
+#define __weakify @weakify(self);
+#define __strongify @strongify(self);
+#define ___weakify(obj) @weakify(obj);
+#define ___strongify(obj) @strongify(obj);
+
+#pragma mark -
+
+typedef void(^GNSuccessHandler)(id response, id model);
+typedef void(^GNErrorHandler)  (id response, NSInteger code);
+typedef void(^GNFailureHandler)(id req, NSError *error);
+
+/// 测试环境
+#define APP_ENVIRONMENT_TEST    1
+/// 企业环境
+#define APP_ENVIRONMENT_INHOUSE 2
+/// AppStore环境
+#define APP_ENVIRONMENT_STORE   3
+
+#undef  APP_ENVIRONMENT
+#define APP_ENVIRONMENT APP_ENVIRONMENT_STORE
+
+#define kWeChatPayEndNotificationName @"kWeChatPayEndNotificationName"
+#define kPayEndRefreshUINotificationName @"kPayEndRefreshUINotificationName"
+#define kRefreshMainPageUINotificationName @"kRefreshMainPageUINotificationName"
+
+#if APP_ENVIRONMENT == APP_ENVIRONMENT_TEST
+    #define kYunBaKey               @"55ffb4f94a481fa955f396d0"
+    #define kHttpDomain             @"http://staging.jhla.com.cn"
+    #define kActivityRatingMapIcon  @"http://dev.image.jhla.com.cn/app_icons/map/act_location.png"
+#elif APP_ENVIRONMENT >= APP_ENVIRONMENT_INHOUSE
+    #define kHttpDomain             @"http://app.jh008.com"
+    #define kActivityRatingMapIcon  @"http://image.jh008.com/app_icons/map/act_location.png"
+#endif
+
+#if APP_ENVIRONMENT == APP_ENVIRONMENT_INHOUSE
+    #define kYunBaKey               @"55c99e8b9477ebf52469571a"
+#endif
+
+#if APP_ENVIRONMENT == APP_ENVIRONMENT_STORE
+    #define kYunBaKey               @"55ffb9cc4a481fa955f396da"
+#endif
+
+
+
+#endif

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GNFileDownloaderVC">
+            <connections>
+                <outlet property="actionButton" destination="mL4-FZ-meY" id="fSw-MN-OFV"/>
+                <outlet property="imageView" destination="Yeo-Rp-w8e" id="08T-ik-Ux5"/>
+                <outlet property="nameLabel" destination="K53-7v-7YV" id="bdl-i6-6A5"/>
+                <outlet property="progressView" destination="LvZ-PE-ii2" id="oSB-nQ-JIU"/>
+                <outlet property="sizeLabel" destination="aGO-di-era" id="u04-G9-NJi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yeo-Rp-w8e">
+                    <rect key="frame" x="110" y="234" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="BmN-ja-4WJ"/>
+                        <constraint firstAttribute="height" constant="100" id="EPO-Sp-6dN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K53-7v-7YV">
+                    <rect key="frame" x="15" y="342" width="290" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-PE-ii2">
+                    <rect key="frame" x="80" y="378" width="160" height="2"/>
+                    <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL4-FZ-meY">
+                    <rect key="frame" x="240" y="359" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2wv-Fk-y4M"/>
+                        <constraint firstAttribute="width" constant="40" id="qpS-eC-48F"/>
+                    </constraints>
+                    <state key="normal" image="file_download">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="file_download_stop"/>
+                    <connections>
+                        <action selector="download:" destination="-1" eventType="touchUpInside" id="MJn-ha-dcW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGO-di-era">
+                    <rect key="frame" x="15" y="388" width="290" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LvZ-PE-ii2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="4HJ-NR-fjS"/>
+                <constraint firstItem="aGO-di-era" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Cze-ea-7vs"/>
+                <constraint firstAttribute="trailing" secondItem="aGO-di-era" secondAttribute="trailing" constant="15" id="GpT-ZH-DHi"/>
+                <constraint firstItem="aGO-di-era" firstAttribute="top" secondItem="LvZ-PE-ii2" secondAttribute="bottom" constant="8" id="J4J-Nk-c9K"/>
+                <constraint firstAttribute="trailing" secondItem="K53-7v-7YV" secondAttribute="trailing" constant="15" id="JTN-fs-sS4"/>
+                <constraint firstAttribute="trailing" secondItem="LvZ-PE-ii2" secondAttribute="trailing" constant="80" id="Jbx-R0-lRD"/>
+                <constraint firstItem="K53-7v-7YV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cX1-2x-ORr"/>
+                <constraint firstAttribute="centerX" secondItem="Yeo-Rp-w8e" secondAttribute="centerX" id="ddr-zu-auX"/>
+                <constraint firstAttribute="centerY" secondItem="Yeo-Rp-w8e" secondAttribute="centerY" id="do2-dw-UGz"/>
+                <constraint firstItem="K53-7v-7YV" firstAttribute="top" secondItem="Yeo-Rp-w8e" secondAttribute="bottom" constant="8" id="f3r-Oy-2lS"/>
+                <constraint firstItem="LvZ-PE-ii2" firstAttribute="top" secondItem="K53-7v-7YV" secondAttribute="bottom" constant="19" id="mCo-a4-rwe"/>
+                <constraint firstItem="mL4-FZ-meY" firstAttribute="leading" secondItem="LvZ-PE-ii2" secondAttribute="trailing" id="uta-IS-oyy"/>
+                <constraint firstItem="LvZ-PE-ii2" firstAttribute="centerY" secondItem="mL4-FZ-meY" secondAttribute="centerY" id="vrc-WA-ONh"/>
+            </constraints>
+            <point key="canvasLocation" x="109" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="file_download" width="20" height="20"/>
+        <image name="file_download_stop" width="20" height="20"/>
+    </resources>
+</document>

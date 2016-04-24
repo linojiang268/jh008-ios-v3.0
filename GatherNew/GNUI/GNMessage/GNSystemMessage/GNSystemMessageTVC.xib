@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="zXP-Ve-0Yg" customClass="GNSystemMessageTVC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zXP-Ve-0Yg" id="mGg-N6-AaV">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-19-Kcs">
+                        <rect key="frame" x="15" y="15" width="36" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_clock" translatesAutoresizingMaskIntoConstraints="NO" id="rrX-g4-Snc">
+                        <rect key="frame" x="15" y="41" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="1rW-gr-VjR"/>
+                            <constraint firstAttribute="width" constant="9" id="Pbx-QB-YFU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiA-bX-ASg">
+                        <rect key="frame" x="29" y="38" width="291" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="j7c-kB-zTE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rrX-g4-Snc" secondAttribute="bottom" constant="9" id="2RJ-4i-T4j"/>
+                    <constraint firstItem="YU4-19-Kcs" firstAttribute="leading" secondItem="mGg-N6-AaV" secondAttribute="leading" constant="15" id="A8N-JM-h2d"/>
+                    <constraint firstItem="YU4-19-Kcs" firstAttribute="top" secondItem="mGg-N6-AaV" secondAttribute="top" constant="15" id="Evt-ir-J9a"/>
+                    <constraint firstItem="rrX-g4-Snc" firstAttribute="top" secondItem="YU4-19-Kcs" secondAttribute="bottom" constant="10" id="Fcj-gq-0ED"/>
+                    <constraint firstItem="qiA-bX-ASg" firstAttribute="leading" secondItem="rrX-g4-Snc" secondAttribute="trailing" constant="5" id="OPv-LR-0Xl"/>
+                    <constraint firstItem="rrX-g4-Snc" firstAttribute="leading" secondItem="mGg-N6-AaV" secondAttribute="leading" constant="15" id="PKn-eP-2Mx"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YU4-19-Kcs" secondAttribute="trailing" id="WgN-k6-c3L"/>
+                    <constraint firstAttribute="trailing" secondItem="qiA-bX-ASg" secondAttribute="trailing" id="cSZ-py-IDC"/>
+                    <constraint firstItem="rrX-g4-Snc" firstAttribute="centerY" secondItem="qiA-bX-ASg" secondAttribute="centerY" id="cbZ-aM-mpm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="qiA-bX-ASg" id="ceg-v7-nRf"/>
+                <outlet property="titleLabel" destination="YU4-19-Kcs" id="RzH-xm-LLa"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="438"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_clock" width="9" height="9"/>
+    </resources>
+</document>

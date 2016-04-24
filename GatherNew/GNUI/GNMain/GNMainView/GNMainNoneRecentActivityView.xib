@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GNMainNoneRecentActivityView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没有参与任何活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qr-cB-2gV">
+                    <rect key="frame" x="80" y="60" width="160" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAj-WU-MfO">
+                    <rect key="frame" x="100" y="97" width="120" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="7xq-I2-awf"/>
+                        <constraint firstAttribute="height" constant="40" id="z9N-T5-Mg1"/>
+                    </constraints>
+                    <state key="normal" title="立即参与活动">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onActionButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BBW-kH-qyy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="kAj-WU-MfO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9gT-ZD-UJx"/>
+                <constraint firstItem="kAj-WU-MfO" firstAttribute="top" secondItem="3qr-cB-2gV" secondAttribute="bottom" constant="20" id="Ikk-qm-oGS"/>
+                <constraint firstItem="3qr-cB-2gV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="Rm5-Oc-0DB"/>
+                <constraint firstItem="3qr-cB-2gV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kw8-rc-cez"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="kAj-WU-MfO" id="jDY-aY-1vV"/>
+                <outlet property="tipsLabel" destination="3qr-cB-2gV" id="O4n-CJ-KkZ"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="315"/>
+        </view>
+    </objects>
+</document>

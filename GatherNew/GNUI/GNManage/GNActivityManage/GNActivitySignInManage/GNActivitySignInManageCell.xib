@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GNActivitySignInManageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZP-T8-wen">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="fVy-G3-PBR"/>
+                            <constraint firstAttribute="height" priority="750" constant="60" id="jut-Db-fzf"/>
+                        </constraints>
+                        <state key="normal" image="activity_details_call"/>
+                        <connections>
+                            <action selector="onCallButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yd3-10-KZu"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18780060886" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvP-oR-n4a">
+                        <rect key="frame" x="152" y="21" width="93" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="ULF-NG-kbQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安倍晋三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzN-U5-QdL">
+                        <rect key="frame" x="68" y="19" width="72" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="72" id="2XX-3W-XUN"/>
+                            <constraint firstAttribute="height" constant="22" id="vuq-aZ-Ggl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-2P-GeN">
+                        <rect key="frame" x="266" y="18" width="34" height="22"/>
+                        <state key="normal" image="manage_manual_check_in"/>
+                        <connections>
+                            <action selector="onCheckInButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kIf-79-3Cd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rZP-T8-wen" secondAttribute="bottom" constant="-1" id="1bp-v5-QcN"/>
+                    <constraint firstItem="OzN-U5-QdL" firstAttribute="leading" secondItem="rZP-T8-wen" secondAttribute="trailing" constant="8" id="6Z6-M5-c24"/>
+                    <constraint firstAttribute="trailing" secondItem="RkL-2P-GeN" secondAttribute="trailing" constant="20" id="7jb-BI-6KL"/>
+                    <constraint firstItem="rZP-T8-wen" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AEN-Rv-4RU"/>
+                    <constraint firstItem="OzN-U5-QdL" firstAttribute="centerY" secondItem="rZP-T8-wen" secondAttribute="centerY" id="CIX-RM-XOw"/>
+                    <constraint firstItem="IvP-oR-n4a" firstAttribute="centerY" secondItem="OzN-U5-QdL" secondAttribute="centerY" id="CgV-Hk-Owv"/>
+                    <constraint firstItem="rZP-T8-wen" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J7z-4c-963"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IvP-oR-n4a" secondAttribute="trailing" constant="15" id="MSN-wF-od1"/>
+                    <constraint firstItem="IvP-oR-n4a" firstAttribute="leading" secondItem="OzN-U5-QdL" secondAttribute="trailing" constant="12" id="QIs-4w-kIp"/>
+                    <constraint firstItem="RkL-2P-GeN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rJH-Yl-k7W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="callButton" destination="rZP-T8-wen" id="pJA-Qi-KrT"/>
+                <outlet property="checkInButton" destination="RkL-2P-GeN" id="6cM-Hk-fbo"/>
+                <outlet property="nameLabel" destination="OzN-U5-QdL" id="juL-be-qBp"/>
+                <outlet property="numberLabel" destination="IvP-oR-n4a" id="Mos-5i-080"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="440"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="activity_details_call" width="16" height="16"/>
+        <image name="manage_manual_check_in" width="34" height="16"/>
+    </resources>
+</document>

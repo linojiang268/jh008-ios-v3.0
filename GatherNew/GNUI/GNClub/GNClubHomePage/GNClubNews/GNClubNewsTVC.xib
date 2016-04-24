@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="GNClubNewsTVC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HFJ-Uy-1XQ">
+                        <rect key="frame" x="15" y="15" width="74" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="74" id="3FD-e5-ITv"/>
+                            <constraint firstAttribute="width" constant="74" id="AR8-Kg-DQT"/>
+                            <constraint firstAttribute="height" constant="55" id="tew-ug-ys4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tew-ug-ys4"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuW-9i-sdu">
+                        <rect key="frame" x="97" y="15" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_clock" translatesAutoresizingMaskIntoConstraints="NO" id="eCx-5O-bpO">
+                        <rect key="frame" x="97" y="75" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="13z-vy-wab"/>
+                            <constraint firstAttribute="height" constant="9" id="jGd-Cy-Ncy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-h6-MoP">
+                        <rect key="frame" x="111" y="72" width="194" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="tyR-1T-hmD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AuW-9i-sdu" secondAttribute="trailing" constant="15" id="3mp-Wb-Big"/>
+                    <constraint firstAttribute="trailing" secondItem="rRr-h6-MoP" secondAttribute="trailing" constant="15" id="58x-Wm-zvW"/>
+                    <constraint firstAttribute="bottom" secondItem="eCx-5O-bpO" secondAttribute="bottom" constant="15" id="8gO-5g-3Nh"/>
+                    <constraint firstItem="AuW-9i-sdu" firstAttribute="leading" secondItem="HFJ-Uy-1XQ" secondAttribute="trailing" constant="8" id="FbL-dr-dAo"/>
+                    <constraint firstItem="eCx-5O-bpO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AuW-9i-sdu" secondAttribute="bottom" constant="10" id="ZQl-xe-N0Z"/>
+                    <constraint firstItem="AuW-9i-sdu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gWt-A5-wJZ"/>
+                    <constraint firstAttribute="bottom" secondItem="HFJ-Uy-1XQ" secondAttribute="bottom" constant="15" id="gi6-fw-Tlv"/>
+                    <constraint firstItem="eCx-5O-bpO" firstAttribute="leading" secondItem="HFJ-Uy-1XQ" secondAttribute="trailing" constant="8" id="nAd-2S-1dm"/>
+                    <constraint firstItem="HFJ-Uy-1XQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ppC-lf-d9Q"/>
+                    <constraint firstItem="HFJ-Uy-1XQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="uKf-B2-Giv"/>
+                    <constraint firstItem="rRr-h6-MoP" firstAttribute="leading" secondItem="eCx-5O-bpO" secondAttribute="trailing" constant="5" id="vwL-89-CnE"/>
+                    <constraint firstItem="rRr-h6-MoP" firstAttribute="centerY" secondItem="eCx-5O-bpO" secondAttribute="centerY" id="xJD-Kb-Mtt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="rRr-h6-MoP" id="4XG-D4-8SA"/>
+                <outlet property="imageViewCover" destination="HFJ-Uy-1XQ" id="kOC-vh-wNh"/>
+                <outlet property="titleLabel" destination="AuW-9i-sdu" id="73A-0z-tTh"/>
+            </connections>
+            <point key="canvasLocation" x="249" y="376"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_clock" width="9" height="9"/>
+    </resources>
+</document>

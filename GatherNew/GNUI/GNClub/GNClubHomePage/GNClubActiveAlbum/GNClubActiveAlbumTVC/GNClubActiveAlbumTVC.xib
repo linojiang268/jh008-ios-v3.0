@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="HuJ-Jt-0lU" customClass="GNClubActiveAlbumTVC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HuJ-Jt-0lU" id="g0H-mx-dUf">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRz-un-nS4">
+                        <rect key="frame" x="15" y="15" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_clock" translatesAutoresizingMaskIntoConstraints="NO" id="tMD-gF-6vh">
+                        <rect key="frame" x="15" y="41" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="ZXR-yp-6dt"/>
+                            <constraint firstAttribute="height" constant="9" id="yje-q3-Bi7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHy-8p-ZLy">
+                        <rect key="frame" x="29" y="38" width="258" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="KM8-ux-RJE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tMD-gF-6vh" firstAttribute="leading" secondItem="g0H-mx-dUf" secondAttribute="leading" constant="15" id="1AC-qO-CN0"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mRz-un-nS4" secondAttribute="trailing" id="9NK-a1-kEj"/>
+                    <constraint firstAttribute="bottom" secondItem="tMD-gF-6vh" secondAttribute="bottom" constant="9" id="BTI-Gs-WvO"/>
+                    <constraint firstAttribute="trailing" secondItem="gHy-8p-ZLy" secondAttribute="trailing" id="I99-fM-T9K"/>
+                    <constraint firstItem="tMD-gF-6vh" firstAttribute="top" secondItem="mRz-un-nS4" secondAttribute="bottom" constant="6" id="JrV-sl-bVn"/>
+                    <constraint firstItem="mRz-un-nS4" firstAttribute="leading" secondItem="g0H-mx-dUf" secondAttribute="leading" constant="15" id="JwQ-dR-4ag"/>
+                    <constraint firstItem="gHy-8p-ZLy" firstAttribute="leading" secondItem="tMD-gF-6vh" secondAttribute="trailing" constant="5" id="M82-5T-XYy"/>
+                    <constraint firstItem="mRz-un-nS4" firstAttribute="top" secondItem="g0H-mx-dUf" secondAttribute="top" constant="15" id="Mgb-YZ-Mua"/>
+                    <constraint firstItem="tMD-gF-6vh" firstAttribute="centerY" secondItem="gHy-8p-ZLy" secondAttribute="centerY" id="O1O-cC-JTH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="gHy-8p-ZLy" id="6JI-wn-3ZT"/>
+                <outlet property="titleLabel" destination="mRz-un-nS4" id="uad-uO-A8H"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="305"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_clock" width="9" height="9"/>
+    </resources>
+</document>

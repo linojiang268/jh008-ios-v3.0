@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GNActivityAlbumCVC">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uWt-Ud-kbg">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album_add" translatesAutoresizingMaskIntoConstraints="NO" id="qmb-Jr-qjA">
+                        <rect key="frame" x="42" y="42" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="d3g-cf-xXf"/>
+                            <constraint firstAttribute="width" constant="16" id="qbD-Ny-GMJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEN-tA-FcU">
+                        <rect key="frame" x="75" y="74" width="25" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="6bv-m3-pFy"/>
+                            <constraint firstAttribute="width" constant="25" id="LCy-fI-sJ3"/>
+                        </constraints>
+                        <state key="normal" image="my_album_delete">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zEN-tA-FcU" secondAttribute="bottom" id="6bE-ln-4ki"/>
+                <constraint firstAttribute="centerY" secondItem="qmb-Jr-qjA" secondAttribute="centerY" id="7x2-me-EMJ"/>
+                <constraint firstAttribute="trailing" secondItem="uWt-Ud-kbg" secondAttribute="trailing" id="RRL-bn-Xvf"/>
+                <constraint firstItem="uWt-Ud-kbg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YvS-rA-bcz"/>
+                <constraint firstAttribute="trailing" secondItem="zEN-tA-FcU" secondAttribute="trailing" id="a3g-IB-rKc"/>
+                <constraint firstAttribute="centerX" secondItem="qmb-Jr-qjA" secondAttribute="centerX" id="aqR-FM-Vhq"/>
+                <constraint firstItem="uWt-Ud-kbg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dgY-eU-jT6"/>
+                <constraint firstAttribute="bottom" secondItem="uWt-Ud-kbg" secondAttribute="bottom" id="htV-7G-4hZ"/>
+            </constraints>
+            <connections>
+                <outlet property="deleteButton" destination="zEN-tA-FcU" id="Rqf-Bt-m1W"/>
+                <outlet property="imageView" destination="uWt-Ud-kbg" id="QbI-bW-pWT"/>
+                <outlet property="imageViewAdd" destination="qmb-Jr-qjA" id="X9A-ZP-jjh"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="381"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="album_add" width="16" height="16"/>
+        <image name="my_album_delete" width="24" height="26"/>
+    </resources>
+</document>

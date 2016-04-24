@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="z7D-yt-qCa" customClass="GNClubHomePageCVC">
+            <rect key="frame" x="0.0" y="0.0" width="99" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="99" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeE-tN-r2u">
+                        <rect key="frame" x="0.0" y="18" width="99" height="65"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HKg-oN-eR2">
+                                <rect key="frame" x="31" y="2" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="3j5-3h-D75"/>
+                                    <constraint firstAttribute="width" constant="36" id="fhP-nY-OyS"/>
+                                    <constraint firstAttribute="height" constant="36" id="md3-GT-vBZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvK-lJ-qrB">
+                                <rect key="frame" x="29" y="50" width="40" height="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SvK-lJ-qrB" secondAttribute="trailing" constant="10" id="JfM-o8-xaa"/>
+                            <constraint firstAttribute="centerX" secondItem="SvK-lJ-qrB" secondAttribute="centerX" id="aKt-hz-Ubc"/>
+                            <constraint firstItem="SvK-lJ-qrB" firstAttribute="top" secondItem="HKg-oN-eR2" secondAttribute="bottom" constant="12" id="bmh-7B-1p4"/>
+                            <constraint firstAttribute="height" constant="65" id="epy-ky-mUb"/>
+                            <constraint firstAttribute="bottom" secondItem="SvK-lJ-qrB" secondAttribute="bottom" constant="2" id="fHE-sR-2IB"/>
+                            <constraint firstAttribute="centerX" secondItem="HKg-oN-eR2" secondAttribute="centerX" id="mVA-zn-cId"/>
+                            <constraint firstItem="SvK-lJ-qrB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GeE-tN-r2u" secondAttribute="leading" constant="10" id="oq8-xw-0sx"/>
+                            <constraint firstItem="HKg-oN-eR2" firstAttribute="top" secondItem="GeE-tN-r2u" secondAttribute="top" constant="2" id="sOK-Wv-yXm"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_red_point" translatesAutoresizingMaskIntoConstraints="NO" id="aSS-0Q-rvI">
+                        <rect key="frame" x="85" y="8" width="6" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="3Q0-VE-w8C"/>
+                            <constraint firstAttribute="height" constant="6" id="vKL-9U-NJK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="GeE-tN-r2u" secondAttribute="centerY" id="0a4-gk-W6R"/>
+                <constraint firstItem="aSS-0Q-rvI" firstAttribute="top" secondItem="z7D-yt-qCa" secondAttribute="top" constant="8" id="BxE-XU-DnY"/>
+                <constraint firstAttribute="trailing" secondItem="GeE-tN-r2u" secondAttribute="trailing" id="WHV-6M-Swd"/>
+                <constraint firstAttribute="trailing" secondItem="aSS-0Q-rvI" secondAttribute="trailing" constant="8" id="cwJ-7L-7b4"/>
+                <constraint firstItem="GeE-tN-r2u" firstAttribute="leading" secondItem="z7D-yt-qCa" secondAttribute="leading" id="kB7-nT-nAH"/>
+            </constraints>
+            <size key="customSize" width="99" height="101"/>
+            <connections>
+                <outlet property="imageView" destination="HKg-oN-eR2" id="tCZ-fe-AA2"/>
+                <outlet property="redPointView" destination="aSS-0Q-rvI" id="rR2-xU-7GD"/>
+                <outlet property="titleLabel" destination="SvK-lJ-qrB" id="lf1-P0-ZtB"/>
+            </connections>
+            <point key="canvasLocation" x="229.5" y="352.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="club_red_point" width="6" height="6"/>
+    </resources>
+</document>

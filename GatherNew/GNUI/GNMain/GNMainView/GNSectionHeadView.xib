@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GNSectionHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vertical_line" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-zf-0WE">
+                    <rect key="frame" x="12" y="6" width="4" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="1Y8-qb-mZK"/>
+                        <constraint firstAttribute="height" constant="20" id="tIf-Nd-VYU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="section" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-Sb-SM6">
+                    <rect key="frame" x="21" y="6" width="53" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-LQ-IwE">
+                    <rect key="frame" x="304" y="11" width="6" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="11" id="1DO-v0-7L4"/>
+                        <constraint firstAttribute="width" constant="6" id="bx5-nW-zNs"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx9-IG-pJc">
+                    <rect key="frame" x="271" y="7" width="28" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dFg-zf-0WE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="8RS-zL-oB5"/>
+                <constraint firstItem="qCB-Sb-SM6" firstAttribute="leading" secondItem="dFg-zf-0WE" secondAttribute="trailing" constant="5" id="93i-aU-07I"/>
+                <constraint firstItem="dFg-zf-0WE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JFU-2E-zFZ"/>
+                <constraint firstItem="Wdb-LQ-IwE" firstAttribute="leading" secondItem="Mx9-IG-pJc" secondAttribute="trailing" constant="5" id="RNU-ku-rrm"/>
+                <constraint firstItem="qCB-Sb-SM6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tgb-rc-ur5"/>
+                <constraint firstAttribute="trailing" secondItem="Wdb-LQ-IwE" secondAttribute="trailing" constant="10" id="W5s-Gf-KlH"/>
+                <constraint firstItem="Wdb-LQ-IwE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="asF-0g-ab7"/>
+                <constraint firstItem="Mx9-IG-pJc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oYX-Z8-E3a"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreLabel" destination="Mx9-IG-pJc" id="bcW-1S-D1F"/>
+                <outlet property="moreView" destination="Wdb-LQ-IwE" id="HEh-ky-v9R"/>
+                <outlet property="sectionName" destination="qCB-Sb-SM6" id="mv8-al-mpH"/>
+            </connections>
+            <point key="canvasLocation" x="284.5" y="59"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more" width="4" height="7"/>
+        <image name="vertical_line" width="2" height="11"/>
+    </resources>
+</document>
